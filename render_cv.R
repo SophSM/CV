@@ -3,6 +3,7 @@ source("cv_printing_functions.R")
 cv_data <- create_CV_object(
   data_location = "https://docs.google.com/spreadsheets/d/1rcU-da7rHyNJdmyoNKk2Z-MdjWkxvwjFLIOrmg147Ao/edit?usp=sharing"
 )
+Sys.setenv(RSTUDIO_PANDOC="/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools")
 
 readr::write_rds(cv_data, 'cached_positions.rds')
 cache_data <- TRUE
@@ -21,4 +22,5 @@ rmarkdown::render("cv.rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = paste0("ssalazar_cv_", Sys.Date(), ".pdf"))
+                       output = paste0("ssalazar_cv_", Sys.Date(), ".pdf"),
+                       verbose = F)
