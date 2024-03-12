@@ -140,11 +140,11 @@ Teaching Experience {data-icon=chalkboard-teacher}
 CV %<>% print_section('teaching_positions')
 ```
 
-Posters {data-icon=chalkboard-teacher}
+Talks and posters {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('posters')
+CV %<>% print_section('talks_and_posters')
 ```
 
 Courses {data-icon=graduation-cap data-concise=true}
