@@ -147,13 +147,19 @@ Talks and posters {data-icon=chalkboard-teacher}
 CV %<>% print_section('talks_and_posters')
 ```
 
-Courses {data-icon=graduation-cap data-concise=true}
+Courses {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('course_attendances')
 ```
 
+Certifications {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('certifications')
+```
 
 
 ```{r}
